@@ -1,4 +1,4 @@
-# HTMLDOM
+# HTML DOM
 Repositório sobre HTML DOM
 
 O HTML DOM é um padrão para definir um documento HTML.
@@ -38,7 +38,7 @@ document.getElementsByClassName(name) -> encontra o elemento pelo nome da classe
 
 ----------------------------------------------------------------------
 
-# Alterando os elementos HTML
+## Alterando os elementos HTML
 
 Propriedade
 
@@ -52,7 +52,7 @@ Método
 .setAttibute(attribute,value) = Muda o atributo e valor de uma tag HTML
 
 ----------------------------------------------------------------------
-# Adicionado ou Excluíndo um Elemento
+## Adicionado ou Excluíndo um Elemento
 
 document.createElement(element)
 document.removeChild(element)
@@ -61,13 +61,13 @@ document.replaceChild(new, old)
 document.write(text)
 
 ----------------------------------------------------------------------
-# Adicionar um manipulador de Evento
+## Adicionar um manipulador de Evento
 
 document.getElementById(id).onclick = function(){code}
 
 ----------------------------------------------------------------------
 
-# Objetos pré definidos pelo DOM 1 e 3
+## Objetos pré definidos pelo DOM 1 e 3
 
 document.anchors		        Returns all <a> elements that have a name attribute	1
 document.baseURI		        Returns the absolute base URI of the document	3
