@@ -1,0 +1,97 @@
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<hr>
+<h2>Obter elemento (tag) pelo id</h2>
+<p id="paragrafo1">Id da Tag</p>
+<p>A seguir vai ser mostrado um texto que foi capturado pelo método <b>getElementsById</b>:</p>
+<p id="mostrar1"></p>
+
+<hr>
+<h2>Obter elemento pelo nome da tag</h2>
+<h3>Esse método captura um objeto array com todos as tags</h3>
+<p id="paragrafo2">Nome da Tag</p>
+<p>A seguir vai ser mostrado um texto que foi capturado pelo método <b>getElementsByTagName</b> Index 5:</p>
+<p id="mostrar2"></p>
+
+<hr>
+<h2>Obter elemento pelo nome da tag exemplo 2</h2>
+<h3>Encontrar todos elementos dentro de  uma tag pai</h3>
+
+<div id="Pai">
+    <p id="paip1">Paragrafo1 dentro da tag div Pai</p>
+    <p id="paip2">Paragrafo2 dentro da tag div Pai</p>    
+    <p id="paip3">Paragrafo3 dentro da tag div Pai</p>    
+</div>
+
+
+<p id="mostrar3"></p>
+
+
+<hr>
+<h2>Elementos HTML por nome de classe</h2>
+<h3>Esse método captura um objeto array com todos as tags com o mesmo nome de classe</h3>
+<p class="intro">Seja bem vindo: </p>
+<p class="intro">Marco Carvalho</p>
+<p>A seguir vai ser mostrado um texto que foi capturado pelo método <b>getElementsByClassName</b> Index 0:</p>
+<p id="mostrar4"></p>
+
+<hr>
+<h2>Encontrando elementos por seletores CSS</h2>
+<p>A seguir vai ser mostrado um texto que foi capturado pelo método <b>querySelectorAll</b> Index 0:</p>
+<p id="mostrar5"></p>
+
+<hr>
+<h2>Encontrando elementos por Coleções de Objetos</h2>
+<form id="formulario1" action="/action_page.aspx">
+    Nome: <input type="text" name="nome" value="Marco"><br>
+    SobreNome: <input type="text" name="sobrenome" value="Carvalho"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <p>Valores para cada elemento dentro do formulário:</p>
+
+  <p id="mostrar6"></p>
+  
+
+
+<script>
+    
+    /*Elemento por ID */
+    const elementoId = document.getElementById("paragrafo1");
+    document.getElementById("mostrar1").innerHTML = elementoId.innerHTML;
+
+    /* Elemento pelo nome da tag */
+    const elementoTag = document.getElementsByTagName("p");
+    document.getElementsByTagName("p")[5].innerHTML = elementoTag[3].innerHTML;
+
+    /*** obter todas as tags dentro de um container pai ***/
+    const pai = document.getElementById("Pai");
+    const todosP = pai.getElementsByTagName("p");
+
+    document.getElementById("mostrar3").innerHTML = "<b>O parágrafo do index 3 é: </b>" + todosP[2].innerHTML;
+
+    /*Elemento por Nome da classe */
+    const elementoClasse = document.getElementsByClassName("intro");
+    document.getElementById("mostrar4").innerHTML = elementoClasse[0].innerHTML + " " + elementoClasse[1].innerHTML ;
+
+    /* Elementos por seletores CSS */
+    const elementoCss = document.querySelectorAll("p.intro");
+    document.getElementById("mostrar5").innerHTML = elementoCss[0].innerHTML + " " + elementoCss[1].innerHTML ;
+
+    /*** elementos por Coleções de Objetos ***/
+    const x = document.forms["formulario1"];
+    let text = "";
+    for (let i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("mostrar6").innerHTML = text;
+    
+
+
+</script>
+
+</body>
+</html>
