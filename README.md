@@ -27,7 +27,7 @@ de uma tag Html
 
 ----------------------------------------------------------------------
 
-# Encontrando os Elementos Html
+## Encontrando os Elementos Html
 
 O objeto "document" é literalmente toda a página html, esse objeto
 pode acessar todas as tags htmls dentro da página.
