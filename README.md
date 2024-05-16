@@ -1,7 +1,7 @@
 # HTMLDOM
 Repositório sobre HTML DOM
 
-1 - O HTML DOM é um padrão para definir um documento HTML.
+# 1 - O HTML DOM é um padrão para definir um documento HTML.
 
 Manipular o DOM é Obter - Inserir - Alterar - Excluir 
 
@@ -12,22 +12,22 @@ Métodos são Ações e Propriedades são valores do HTML
 
 ----------------------------------------------------------------------
 
-2 - Html DOM pode ser acessado por JavaScript (ou outras linguagens)
-No DOM todos os elementos sõa definidos como objetos
+# 2 - Html DOM pode ser acessado por JavaScript (ou outras linguagens)
+No DOM todos os elementos são definidos como objetos
 
 ----------------------------------------------------------------------
 
-3 - document.getElementById é forma mais fácil de acessar um elemento Html
+# 3 - document.getElementById é forma mais fácil de acessar um elemento Html
 document.getElementById("demo").innerHTML = "Hello World!";
 
 ----------------------------------------------------------------------
 
-4 - A propriedade innerHTML pode ser usada para obter ou subtituir o conteúdo dentro
+# 4 - A propriedade innerHTML pode ser usada para obter ou subtituir o conteúdo dentro
 de uma tag Html
 
 ----------------------------------------------------------------------
 
-5 - Encontrando os Elementos Html
+# 5 - Encontrando os Elementos Html
 
 O objeto "document" é literalmente toda a página html, esse objeto
 pode acessar todas as tags htmls dentro da página.
@@ -38,7 +38,7 @@ document.getElementsByClassName(name) -> encontra o elemento pelo nome da classe
 
 ----------------------------------------------------------------------
 
-6 - Alterando os elementos HTML
+# 6 - Alterando os elementos HTML
 
 Propriedade
 
@@ -52,7 +52,7 @@ Método
 .setAttibute(attribute,value) = Muda o atributo e valor de uma tag HTML
 
 ----------------------------------------------------------------------
-7 - Adicionado ou Excluíndo um Elemento
+# 7 - Adicionado ou Excluíndo um Elemento
 
 document.createElement(element)
 document.removeChild(element)
@@ -61,13 +61,13 @@ document.replaceChild(new, old)
 document.write(text)
 
 ----------------------------------------------------------------------
-8 - Adicionar um manipulador de Evento
+# 8 - Adicionar um manipulador de Evento
 
 document.getElementById(id).onclick = function(){code}
 
 ----------------------------------------------------------------------
 
-9 - Objetos pré definidos pelo DOM 1 e 3
+# 9 - Objetos pré definidos pelo DOM 1 e 3
 
 document.anchors		Returns all <a> elements that have a name attribute	1
 document.baseURI		Returns the absolute base URI of the document	3
