@@ -3,7 +3,7 @@
 
 <body>
 
-    
+
     <h2>HTML DOM</h2>
     <hr>
 
@@ -22,11 +22,38 @@
     <h2>Alterando o valor de um atributo</h2>
     <h3>Usando a propriedade que deseja mudar:</h3>
 
-    <img src="desaprovado.gif" width="160" height="120">
-      
-           
+    <p>Imagem de carregametno</p><img id="imagem" src="desaprovado.gif" width="160" height="120">
+    <p>Imagem alterada</p><img id="imagem1" src="desaprovado.gif" width="160" height="120">
+    
+    <script>
+        document.getElementById("imagem1").src = "aprovado.gif"
+    </script>
+  
+
+    <hr>
+
+    <h2>Conteúdo HTML Dinâmico</h2>
+    <h3>Usando a propriedade que deseja mudar:</h3>
+    <p id="MostrarData"></p>
+
+    <script>
+        document.getElementById("MostrarData").innerHTML = "Data: " + Date();
+    </script>
+
+    <hr>
+
+    <h2>Usando o document.write</h2>
+    <h3>Escrevendo HTML na sequencia do fluxo do documento</h3>
+
+    <p>Parágrafo um com informações normais do fluxo Html</p>
+
+    <script>document.write("Hello World: " + Date());</script>
+
+    <p>Continuação do documento html</p>
         
 </body>
 </html>
+
+
 
 
